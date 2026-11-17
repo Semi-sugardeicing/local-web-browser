@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>使用说明</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; padding:24px 20px 40px; background:#0F1013; color:#EDEEF0;
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; font-size:16px; line-height:1.75; }
+  h1 { font-size:24px; margin:0 0 6px; letter-spacing:-.01em; }
+  h2 { font-size:16px; margin:26px 0 10px; color:#EDEEF0; }
+  p { margin:0 0 12px; color:#9AA1AC; }
+  ol { margin:0; padding-left:20px; color:#9AA1AC; }
+  li { margin-bottom:8px; }
+  .card { background:#191B1F; border-radius:14px; padding:16px 18px; margin:12px 0 0; }
+  code { background:#23262B; padding:1px 6px; border-radius:6px; font-size:14px; color:#EDEEF0; }
+  .k { color:#FF6A3D; font-weight:600; }
+  a { color:#FF6A3D; }
+</style></head><body>
+<h1>使用说明</h1>
+<p>这一页能打开，就说明 App 认得里面的网页了。下面这几步就是在手机上翻本地网页的全部方法。</p>
+
+<h2>1. 导入一整个文件夹</h2>
+<div class="card">
+  <ol>
+    <li>回首页，点底下的「添加文件」</li>
+    <li>选「选文件夹」，找到装着网页的那一层（有 <code>index.html</code> 的那层）</li>
+    <li>系统会问你要一次权限，允许</li>
+    <li>回首页，它会出现在「站点」里，点进去就能翻</li>
+  </ol>
+</div>
+<p style="margin-top:10px">一定要整个文件夹一起进来。网页里的跳转是一条条相对路径，少一张图、少一个页面，翻到一半就白屏。</p>
+
+<h2>2. 为什么文件会复制一份进来</h2>
+<p>手机原位置的网页被系统挪走、或者相册清了，链接就断了。复制进来以后，外面怎么整理都跟它没关系。代价是占地方：网页多大就占多大。</p>
+
+<h2>3. 为什么两指放不大</h2>
+<p>很多网页没写缩放规则，双指一碰整页就跑偏，按钮点不中。所以默认锁死。要放大得去设置里开，而且只对网页内容生效，App 自己的界面永远不动。</p>
+
+<h2>4. 几点要留意的</h2>
+<div class="card">
+  <p style="margin:0"><span class="k">不联网</span>：这个 App 没有联网权限，网页里写的外链点了会交给系统浏览器。</p>
+  <p style="margin:10px 0 0"><span class="k">只读本地</span>：只会读你自己导进来的东西，不会去翻别的文件夹。</p>
+  <p style="margin:10px 0 0"><span class="k">网页的样子它不改</span>：页面长什么样就是原作者写的什么样，App 只加了上面那条返回栏。</p>
+</div>
+</body></html>
